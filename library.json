@@ -1,0 +1,19 @@
+{
+    "name": "VL53L_ULD_API_platform",
+    "version": "1.0.0",
+    "description": "VL53L_ULD_API_platform",
+    "keywords": "VL53L",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/SG-O/VL53L_ULD_API_platform.git"
+    },
+    "license": "BSD-3-Clause",
+    "include": [
+        "inc/*",
+        "src/*"
+    ],
+    "build": {
+        "includeDir": "inc",
+        "srcDir": "src"
+    }
+}
