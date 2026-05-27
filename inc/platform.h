@@ -19,6 +19,7 @@
 #include <string.h>
 
 #include "platform_vl53l5cx.h"
+#include "platform_vl53l7cx.h"
 #include "platform_vl53l8cx.h"
 
 #ifdef __cplusplus

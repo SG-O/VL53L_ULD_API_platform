@@ -11,15 +11,15 @@
   */
 
 
-#ifndef _PLATFORM_VL53L8CX_H_
-#define _PLATFORM_VL53L8CX_H_
+#ifndef _PLATFORM_VL53L7CX_H_
+#define _PLATFORM_VL53L7CX_H_
 #pragma once
 
 #ifdef __cplusplus
 extern "C" {
 #endif
 
-#define VL53L8CX_Platform VL53L_Platform
+#define VL53L7CX_Platform VL53L_Platform
 
 /*
  * @brief The macro below is used to define the number of target per zone sent
@@ -28,8 +28,8 @@ extern "C" {
  * zone means a lower RAM). The value must be between 1 and 4.
  */
 
-#ifndef VL53L8CX_NB_TARGET_PER_ZONE
-#define VL53L8CX_NB_TARGET_PER_ZONE		1U
+#ifndef VL53L7CX_NB_TARGET_PER_ZONE
+#define VL53L7CX_NB_TARGET_PER_ZONE		1U
 #endif
 
 /*
@@ -39,7 +39,7 @@ extern "C" {
  * an increased precision.
  */
 
-// #define 	VL53L8CX_USE_RAW_FORMAT
+// #define 	VL53L7CX_USE_RAW_FORMAT
 
 /*
  * @brief All macro below are used to configure the sensor output. User can
@@ -47,26 +47,26 @@ extern "C" {
  * I2C access.
  */
 
-#define VL53L8CX_DISABLE_AMBIENT_PER_SPAD
-#define VL53L8CX_DISABLE_NB_SPADS_ENABLED
-// #define VL53L8CX_DISABLE_NB_TARGET_DETECTED
-#define VL53L8CX_DISABLE_SIGNAL_PER_SPAD
-// #define VL53L8CX_DISABLE_RANGE_SIGMA_MM
-// #define VL53L8CX_DISABLE_DISTANCE_MM
-// #define VL53L8CX_DISABLE_REFLECTANCE_PERCENT
-// #define VL53L8CX_DISABLE_TARGET_STATUS
-#define VL53L8CX_DISABLE_MOTION_INDICATOR
+#define VL53L7CX_DISABLE_AMBIENT_PER_SPAD
+#define VL53L7CX_DISABLE_NB_SPADS_ENABLED
+// #define VL53L7CX_DISABLE_NB_TARGET_DETECTED
+#define VL53L7CX_DISABLE_SIGNAL_PER_SPAD
+// #define VL53L7CX_DISABLE_RANGE_SIGMA_MM
+// #define VL53L7CX_DISABLE_DISTANCE_MM
+// #define VL53L7CX_DISABLE_REFLECTANCE_PERCENT
+// #define VL53L7CX_DISABLE_TARGET_STATUS
+#define VL53L7CX_DISABLE_MOTION_INDICATOR
 
-#define VL53L8CX_RdByte      VL53L_RdByte
-#define VL53L8CX_WrByte      VL53L_WrByte
-#define VL53L8CX_RdMulti     VL53L_RdMulti
-#define VL53L8CX_WrMulti     VL53L_WrMulti
-#define VL53L8CX_Reset_Sensor VL53L_Reset_Sensor
-#define VL53L8CX_SwapBuffer  VL53L_SwapBuffer
-#define VL53L8CX_WaitMs      VL53L_WaitMs
+#define VL53L7CX_RdByte      VL53L_RdByte
+#define VL53L7CX_WrByte      VL53L_WrByte
+#define VL53L7CX_RdMulti     VL53L_RdMulti
+#define VL53L7CX_WrMulti     VL53L_WrMulti
+#define VL53L7CX_Reset_Sensor VL53L_Reset_Sensor
+#define VL53L7CX_SwapBuffer  VL53L_SwapBuffer
+#define VL53L7CX_WaitMs      VL53L_WaitMs
 
 #ifdef __cplusplus
 };
 #endif
 
-#endif	// _PLATFORM_VL53L8CX_H_
+#endif	// _PLATFORM_VL53L7CX_H_

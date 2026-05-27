@@ -15,8 +15,6 @@
 #define _PLATFORM_VL53L5CX_H_
 #pragma once
 
-#include "platform.h"
-
 #ifdef __cplusplus
 extern "C" {
 #endif
